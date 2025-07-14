@@ -1,0 +1,17 @@
+[project]
+name = "class-3"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "openai-agents>=0.1.0",
+]
+
+[project.scripts]
+class-3 = "class_3:main"
+main = "class_3.main:start"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
