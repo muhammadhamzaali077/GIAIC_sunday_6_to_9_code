@@ -11,6 +11,7 @@ dependencies = [
 [project.scripts]
 class-3 = "class_3:main"
 main = "class_3.main:start"
+grd = "class_3.guardrails:start"
 
 [build-system]
 requires = ["hatchling"]
