@@ -6,12 +6,15 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "openai-agents>=0.1.0",
+    "rich>=14.1.0",
+    "python-dotenv>=1.0.0",
 ]
 
 [project.scripts]
-class-3 = "class_3:main"
 main = "class_3.main:start"
 grd = "class_3.guardrails:start"
+turn = "class_3.turn:start"
+
 
 [build-system]
 requires = ["hatchling"]

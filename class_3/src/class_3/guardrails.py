@@ -13,12 +13,15 @@ from agents import (
 )
 import asyncio
 from agents import  RunConfig, OpenAIChatCompletionsModel
-
 from openai import AsyncOpenAI
+import os
+from dotenv import load_dotenv
 
+# Load environment variables from .env file
+load_dotenv()
 
 GEMINI_MODEL :str = "gemini-2.0-flash"
-GEMINI_API_KEY :str = "AIzaSyCZE5ZXKCVlPntcrFPXTB6UuyACDAq0RaY"
+GEMINI_API_KEY :str = os.getenv("GEMINI_API_KEY", "Gemini_api_key")
 BASE_URL :str = "https://generativelanguage.googleapis.com/v1beta/openai/"
 
 set_tracing_disabled(disabled=True)
